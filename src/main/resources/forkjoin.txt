@@ -1,0 +1,102 @@
+For learning about basic parallel operations, there are only 2-4 classes you need to know about:
+
+1. ForkJoinPool: An instance of this class is used to run all your fork-join tasks in the whole program.
+2. RecursiveTask<V>: You run a subclass of this in a pool and have it return a result; see the examples below.
+3. RecursiveAction: just like RecursiveTask except it does not return a result
+4. ForkJoinTask<V>: superclass of RecursiveTask<V> and RecursiveAction. fork and join are methods defined in this class. You won't use this class directly, but it is the class with most of the useful javadoc documentation, in case you want to learn about additional methods.
+All the classes are in the package java.util.concurrent, so it is natural to have import statements like this:
+
+  import java.util.concurrent.ForkJoinPool;
+  import java.util.concurrent.RecursiveTask;
+To use the library, you need a ForkJoinPool object. In Java 8, get the object you want by calling the static method ForkJoinPool.commonPool(). In Java 7 or 6 only, you need to create a pool via new ForkJoinPool(), but do this only once and store the result in a static field of some class, so your whole program can use it:
+
+  public static ForkJoinPool fjPool = new ForkJoinPool();
+(This constructor encourages the pool to use all the available processors, which is a good choice. In Java 8, the common-pool object does this too.) You do not want to have more than one ForkJoinPool object in your program — the library supports it for advanced uses but discourages even experts from doing it.
+
+It is the job of the pool to take all the tasks that can be done in parallel and actually use the available processors effectively.
+
+
+
+The key for non-dumb examples, which is hinted at nicely by the name RecursiveTask, is that your compute method can create other RecursiveTask objects and have the pool run them in parallel. First you create another object. Then you call its fork method. That actually starts parallel computation — fork itself returns quickly, but more computation is now going on. When you need the answer, you call the join method on the object you called fork on. The join method will get you the answer from compute() that was figured out by fork. If it is not ready yet, then join will block (i.e., not return) until it is ready. So the point is to call fork “early” and call join “late”, doing other useful work in-between.
+
+Those are the “rules” of how fork, join, and compute work, but in practice a lot of the parallel algorithms you write in this framework have a very similar form, best seen with an example. What this example does is sum all the elements of an array, using parallelism to potentially process different 5000-element segments in parallel. (The types long / Long are just like int / Integer except they are 64 bits instead of 32. They can be a good choice if your data can be large — a sum could easily exceed 232, but exceeding 264 is less likely.)
+
+import java.util.concurrent.ForkJoinPool;
+import java.util.concurrent.RecursiveTask;
+
+class Sum extends RecursiveTask<Long> {
+    static final int SEQUENTIAL_THRESHOLD = 5000;
+
+    int low;
+    int high;
+    int[] array;
+
+    Sum(int[] arr, int lo, int hi) {
+        array = arr;
+        low   = lo;
+        high  = hi;
+    }
+
+    protected Long compute() {
+        if(high - low <= SEQUENTIAL_THRESHOLD) {
+            long sum = 0;
+            for(int i=low; i < high; ++i)
+                sum += array[i];
+            return sum;
+         } else {
+            int mid = low + (high - low) / 2;
+            Sum left  = new Sum(array, low, mid);
+            Sum right = new Sum(array, mid, high);
+            left.fork();
+            long rightAns = right.compute();
+            long leftAns  = left.join();
+            return leftAns + rightAns;
+         }
+     }
+
+     static long sumArray(int[] array) {
+         return ForkJoinPool.commonPool().invoke(new Sum(array,0,array.length));
+     }
+}
+How does this code work? A Sum object is given an array and a range of that array. The compute method sums the elements in that range. If the range has fewer than SEQUENTIAL_THRESHOLD elements, it uses a simple for-loop like you learned in introductory programming. Otherwise, it creates two Sum objects for problems of half the size. It uses fork to compute the left half in parallel with computing the right half, which this object does itself by calling right.compute(). To get the answer for the left, it calls left.join().
+
+Why do we have a SEQUENTIAL_THRESHOLD? It would be correct instead to keep recurring until high==low+1 and then return array[low]. But this creates a lot more Sum objects and calls to fork, so it will end up being much less efficient despite the same asymptotic complexity.
+
+Why do we create more Sum objects than we are likely to have procesors? Because it is the framework's job to make a reasonable number of parallel tasks execute efficiently and to schedule them in a good way. By having lots of fairly small parallel tasks it can do a better job, especially if the number of processors available to your program changes during execution (e.g., because the operating system is also running other programs) or the tasks end up taking different amounts of time.
+
+So setting SEQUENTIAL_THRESHOLD to a good-in-practice value is a trade-off. The documentation for the ForkJoin framework suggests creating parallel subtasks until the number of basic computation steps is somewhere over 100 and less than 10,000. The exact number is not crucial provided you avoid extremes.
+
+Gotchas
+There are a few “gotchas” when using the library that you might need to be aware of:
+
+It might seem more natural to call fork twice for the two subproblems and then call join twice. This is naturally a little less efficient than just calling compute for no benefit since you are creating more parallel tasks than is helpful. But it turns out to be a lot less efficient, for reasons that are specific to the current implementation of the library and related to the overhead of creating tasks that do very little work themselves.
+Remember that calling join blocks until the answer is ready. So if you look at the code:
+    left.fork();
+    long rightAns = right.compute();
+    long leftAns  = left.join();
+    return leftAns + rightAns;
+you'll see that the order is crucial. If we had written:
+    left.fork();
+    long leftAns  = left.join();
+    long rightAns = right.compute();
+    return leftAns + rightAns;
+our entire array-summing algorithm would have no parallelism since each step would completely compute the left before starting to compute the right. Similarly, this version is non-parallel because it computes the right before starting to compute the left:
+    long rightAns = right.compute();
+    left.fork();
+    long leftAns  = left.join();
+    return leftAns + rightAns;
+You should not use the invoke method of a ForkJoinPool from within a RecursiveTask or RecursiveAction. Instead you should always call compute or fork directly even if the object is a different subclass of RecursiveTask or RecursiveAction. You may be conceptually doing a “different” parallel computation, but it is still part of the same parallel task. Only sequential code should call invoke to begin parallelism. (More recent versions of the library may have made this less of an issue, but if you are having problems, this may be the reason.)
+When debugging an uncaught exception, it is common to examine the “stack trace” in the debugger: the methods on the call stack when the exception occurred. With a fork-join computation, this is not as simple since the call to compute occurs in a different thread than the conceptual caller (the code that called fork). The library and debugger try to give helpful information including stack information for the thread running compute and the thread that called fork, but it can be hard to read and it includes a number of calls related to the library implementation that you should ignore. You may find it easier to debug by catching the exception inside the call to compute and just printing that stack trace.
+In terms of performance, there are many reasons a fork-join computation might run slower than you expect, even slower than a sequential version of the algorithm. See the next section.
+Timing Issues
+It is natural to write a simple fork-join program and compare its performance to a sequential program solving the same problem. Doing so is trickier than you might like for a variety of good reasons. Here we list various reasons and what to do about them. You can use this as a list of things to check when you are not seeing the parallel speed-up you might expect. Some of these issues are relevant for any microbenchmarking on modern systems while others are more specific to parallelism.
+
+Time for long enough: To compare the time to run two pieces of code, make sure they each run for at least a few seconds. You can put the computation you care about in a loop, but see below for how to do this without creating artificial effects.
+Have enough data elements: For a computation over an array, for example, use an array with at least a million elements.
+Make sure you have the number of processors you think you do: A parallel computation is unlikely to “win” with 1 processor nor produce the results you expect if the operating system is not providing as many processors as you think. One thing you can do is pass an explicit number to the ForkJoinPool constructor (e.g., 1, 2, 4, 8) and see if larger numbers (up to the number of processors you expect are available) lead to better performance.
+Warm up the library: The framework itself is just Java code and the Java implementation “takes a while” to decide this code is performance critical and optimize it. For timing purposes, it is best to run a couple fork-join computations before timing a fork-join computation as otherwise the first, slow run will dominate the results.
+Do enough computation on each element: Very simple operations like adding together numbers take so little time that many computers will be limited by the time to get the data from memory, which may prevent effective use of parallelism. While a fork-join reduction that sums a ten-million element array may outperform a sequential version, a map that sets out[i] = in1[i]+in2[i] for similar-length arrays may not because doing three memory operations and one addition may cause processors to wait for each other to access memory. Try a more sophisticated operation like out[i] = (Math.abs(in[i-1])+Math.abs(in[i])+Math.abs(in[i+1]))/3 or even just out[i] = in[i]*in[i].
+Use the result of your computation: A clever compiler might skip doing computations it can tell are not used by a program. After computing a result and after timing, do something like print the answer out. To avoid printing out a large array, you could choose a random element of the array to print.
+Do not use very simple inputs: Some compilers might be so clever to notice that simple arrays where, for example, arr[i] = i have a structure that can be optimized, leading to sequential code that is “unfairly” fast. (It is unfair: nobody wants to sum an array with such inputs, we have constant-time algorithms to sum the integers from 1 to n.) Perhaps fill the array with random elements, or at least change a few of the elements to other values after the initialization.
+Use slightly different inputs for each iteration: For various reasons above (long enough timing runs, warming up the library), you may perform the same computation many times in a loop. Again the compiler might “notice” that the sequential or parallel code is doing the same thing across iterations and avoid doing unnecessary computations, leading to you not timing what you think you are. You should be able to “confuse” the compiler by swapping around a few array elements between iterations.
+Double-check your sequential cut-offs: Make sure your fork-join code is correctly computing when to switch to a sequential algorithm. You want lots of small tasks, but each should still be doing a few thousand or tens of thousands of arithmetic operations. If too low, you will slow down the fork-join code due to the overhead of task creation. If too large, you will leave processors idle, which naturally slows things down.
