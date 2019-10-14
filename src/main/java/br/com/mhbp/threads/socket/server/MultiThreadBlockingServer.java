@@ -1,4 +1,9 @@
-package br.com.mhbp.threads.socket;
+package br.com.mhbp.threads.socket.server;
+
+import br.com.mhbp.threads.socket.Handler;
+import br.com.mhbp.threads.socket.PrintingHandler;
+import br.com.mhbp.threads.socket.ThreadHandler;
+import br.com.mhbp.threads.socket.TransmogrifyHandler;
 
 import java.io.IOException;
 import java.net.ServerSocket;

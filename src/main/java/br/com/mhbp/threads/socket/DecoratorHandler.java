@@ -7,7 +7,7 @@ public abstract class DecoratorHandler<S> implements Handler<S> {
 
     protected Handler<S> other;
 
-    protected DecoratorHandler(Handler other) {
+    public DecoratorHandler(Handler other) {
         this.other = other;
     }
 

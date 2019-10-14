@@ -100,3 +100,77 @@ Use the result of your computation: A clever compiler might skip doing computati
 Do not use very simple inputs: Some compilers might be so clever to notice that simple arrays where, for example, arr[i] = i have a structure that can be optimized, leading to sequential code that is “unfairly” fast. (It is unfair: nobody wants to sum an array with such inputs, we have constant-time algorithms to sum the integers from 1 to n.) Perhaps fill the array with random elements, or at least change a few of the elements to other values after the initialization.
 Use slightly different inputs for each iteration: For various reasons above (long enough timing runs, warming up the library), you may perform the same computation many times in a loop. Again the compiler might “notice” that the sequential or parallel code is doing the same thing across iterations and avoid doing unnecessary computations, leading to you not timing what you think you are. You should be able to “confuse” the compiler by swapping around a few array elements between iterations.
 Double-check your sequential cut-offs: Make sure your fork-join code is correctly computing when to switch to a sequential algorithm. You want lots of small tasks, but each should still be doing a few thousand or tens of thousands of arithmetic operations. If too low, you will slow down the fork-join code due to the overhead of task creation. If too large, you will leave processors idle, which naturally slows things down.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1.4 Multiprocessor Scheduling, Parallel Speedup
+
+Lecture Summary: In this lecture, we studied the possible executions of a Computation Graph (CG) on an idealized parallel machine with P processors. It is idealized because all processors are assumed to be identical, and the execution time of a node is assumed to be fixed, regardless of which processor it executes on. A legal schedule is one that obeys the dependence constraints in the CG, such that for every directed edge (A, B), the schedule guarantees that step B is only scheduled after step A completes. Unless otherwise specified, we will restrict our attention in this course to schedules that have no unforced idleness, i.e., schedules in which a processor is not permitted to be idle if a CG node is available to be scheduled on it. Such schedules are also referred to as "greedy" schedules.
+
+We defined T_{P}
+P
+​	  as the execution time of a CG on P processors, and observed that
+
+T∞ ≤ T_P
+P
+​	  ≤ T_1
+1
+​
+
+We also saw examples for which there could be different values of T_P
+P
+​	  for different schedules of the same CG on P processors.
+
+We then defined the parallel speedup for a given schedule of a CG on P processors as Speedup(P) = T_1
+1
+​	 /T_P
+P
+​	 , and observed that Speedup(P) must be ≤ the number of processors P , and also ≤ the ideal parallelism, WORK/SPAN.
+
+
+
+
+
+Lecture Summary: In this lecture, we studied a simple observation made by Gene Amdahl in 1967: if q ≤ 1 is the fraction of WORK in a parallel program that must be executed sequentially, then the best speedup that can be obtained for that program for any number of processors, P , is Speedup(P) ≤ 1/q.
+
+This observation follows directly from a lower bound on parallel execution time that you are familiar with, namely T_P
+P
+​	  ≥ SPAN(G). If fraction q of WORK(G) is sequential, it must be the case that SPAN(G) ≥ q × WORK(G). Therefore, Speedup(P) = T_1
+1
+​	 /T_P
+P
+​	  must be ≤ WORK(G)/(q × WORK(G)) = 1/q since T_1
+1
+​	  = WORK(G) for greedy schedulers.
+
+Amdahl’s Law reminds us to watch out for sequential bottlenecks both when designing parallel algorithms and when implementing programs on real machines. As an example, if q = 10%, then Amdahl's Law reminds us that the best possible speedup must be ≤ 10 (which equals 1/q ), regardless of the number of processors available.

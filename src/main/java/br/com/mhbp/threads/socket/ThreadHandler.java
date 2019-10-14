@@ -2,7 +2,7 @@ package br.com.mhbp.threads.socket;
 
 public class ThreadHandler<S> extends UncheckedIOExceptionConverterHandler<S> {
 
-    protected ThreadHandler(Handler other) {
+    public ThreadHandler(Handler other) {
         super(other);
     }
 

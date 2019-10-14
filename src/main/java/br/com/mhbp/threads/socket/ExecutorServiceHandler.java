@@ -1,26 +1,29 @@
 package br.com.mhbp.threads.socket;
 
-import java.io.IOException;
 import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 import java.util.concurrent.FutureTask;
 
-public class ThreadPoolingHandler<S> extends UncheckedIOExceptionConverterHandler<S> {
+public class ExecutorServiceHandler<S> extends DecoratorHandler<S> {
 
 
     private final ExecutorService executorService;
     private final Thread.UncaughtExceptionHandler exceptionHandler;
 
-    protected ThreadPoolingHandler(Handler other,
-                                   ExecutorService executorService,
-                                   Thread.UncaughtExceptionHandler exceptionHandler) {
+    public ExecutorServiceHandler(Handler other,
+                                  ExecutorService executorService,
+                                  Thread.UncaughtExceptionHandler exceptionHandler) {
         super(other);
         this.executorService = executorService;
         this.exceptionHandler = exceptionHandler;
     }
 
-    @Override
+    public ExecutorServiceHandler(Handler other, ExecutorService executorService) {
+        this(other, executorService, (t,e) -> System.out.println("uncaucht: " + t + ". error: " + e));
+
+    }
+
+        @Override
     public void handle(S s) {
 
         Future<?> future = executorService.submit(new FutureTask(() -> {
@@ -32,15 +35,13 @@ public class ThreadPoolingHandler<S> extends UncheckedIOExceptionConverterHandle
                 exceptionHandler.uncaughtException(Thread.currentThread(), throwable);
             }
 
+            @Override
+            protected void done() {
+                super.done();
+            }
         });
 
 
-//        executorService.execute(() -> {
-//            try {
-//                other.handle(s);
-//            } catch (IOException e) {
-//                e.printStackTrace();
-//            }
-//        });
+
     }
 }

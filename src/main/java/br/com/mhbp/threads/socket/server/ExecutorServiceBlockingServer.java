@@ -1,4 +1,6 @@
-package br.com.mhbp.threads.socket;
+package br.com.mhbp.threads.socket.server;
+
+import br.com.mhbp.threads.socket.*;
 
 import java.io.IOException;
 import java.net.ServerSocket;
@@ -11,11 +13,11 @@ public class ExecutorServiceBlockingServer {
         ServerSocket serverSocket = new ServerSocket(8388);
 
         Handler<Object> handler = new ThreadHandler<>(
-                new ThreadPoolingHandler(
+                new ExecutorServiceHandler(
                         new PrintingHandler(
                                 new TransmogrifyHandler()
                         ),
-                        Executors.newCachedThreadPool(),
+                        Executors.newFixedThreadPool(10),
                         (t, e) -> {
                             System.out.println("uncaught: " +t + "exception: " + e);
                         }
@@ -26,6 +28,6 @@ public class ExecutorServiceBlockingServer {
             Socket s = serverSocket.accept();
             handler.handle(s);
         }
-    }
+
     }
 }

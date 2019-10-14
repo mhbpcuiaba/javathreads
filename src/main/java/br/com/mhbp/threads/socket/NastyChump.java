@@ -10,7 +10,7 @@ public class NastyChump {
 
         for (int i = 0; i < socket.length; i++) {
             try {
-                socket[i] = new Socket("localhost", 8080);
+                socket[i] = new Socket("localhost", 8388);
             } catch (IOException e) {
                 e.printStackTrace();
             }

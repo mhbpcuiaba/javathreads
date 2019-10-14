@@ -4,7 +4,7 @@ import java.io.IOException;
 
 public class PrintingHandler<S> extends DecoratorHandler<S> {
 
-    protected PrintingHandler(Handler other) {
+    public PrintingHandler(Handler other) {
         super(other);
     }
 
