@@ -2,7 +2,7 @@ package br.com.mhbp.datastructure.tree.miscellaneous;
 
 import java.util.Arrays;
 
-public class GFG {
+public class TwoCandidatesForSum  {
 
 
     public static void main(String[] args) {
