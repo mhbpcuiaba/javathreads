@@ -86,5 +86,10 @@ public class Examples {
         list.stream().mapToLong(num -> Long.parseLong(num))
                 .filter(num -> Math.sqrt(num) / 5 == 3 )
                 .forEach(out::println);
+
+        List<Integer> numbers = Arrays.asList(1, 2, 3, 5, 8, 43, 7);
+
+        out.println(numbers.stream().filter(n -> n%2 ==0).reduce(0, Integer::sum));
+        out.println(numbers.stream().filter(n -> n%2 ==0).collect(Collectors.toList()));
     }
 }
