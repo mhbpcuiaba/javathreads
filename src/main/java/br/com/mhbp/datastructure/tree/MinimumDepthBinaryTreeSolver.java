@@ -1,5 +1,8 @@
 package br.com.mhbp.datastructure.tree;
 
+import java.util.LinkedList;
+import java.util.Queue;
+
 public class MinimumDepthBinaryTreeSolver {
 
     public static void main(String args[] ) throws Exception {
@@ -14,17 +17,66 @@ public class MinimumDepthBinaryTreeSolver {
         v2.left = v4;
         v2.right = v5;
 
-        System.out.println(new MinimumDepthBinaryTreeSolver().dfs(v1, 0));
+        System.out.println(new MinimumDepthBinaryTreeSolver().minimumDeptBinaryTreeRecursive(v1, 0));
     }
 
-    int dfs(Node v, int level) {
+    int minimumDeptBinaryTreeRecursive(Node v, int level) {
 
         if (v == null) return level;
         level++;
-        int sizeDepthLeft = dfs(v.left, level);
-        int sizeDepthRight = dfs(v.right, level);
+        int sizeDepthLeft = minimumDeptBinaryTreeRecursive(v.left, level);
+        int sizeDepthRight = minimumDeptBinaryTreeRecursive(v.right, level);
         return sizeDepthLeft < sizeDepthRight ? sizeDepthLeft : sizeDepthRight;
 
+    }
+
+    int minimumDeptBinaryTreeIterative(Node root) {
+
+        if (root == null) throw new IllegalArgumentException("Root cannot be null!");
+
+
+        int level = 1;
+
+        Queue<QueueItem> queue = new LinkedList<>();
+        QueueItem queueItem = new QueueItem(root, 1);
+        queue.add(queueItem);
+
+
+        while (Boolean.FALSE.equals(queue.isEmpty())) {
+//            queueItem = queue.peek();
+//            queue.remove();
+            queueItem = queue.remove();
+
+            if (queueItem.node.left == null && queueItem.node.right == null ) {
+                return queueItem.depth;
+            }
+
+            if (queueItem.node.left != null) {
+                queueItem.node = queueItem.node.left;
+
+
+            }
+
+            if(queueItem.node.right != null ) {
+                queueItem.node = queueItem.node.right;
+            }
+            queueItem.depth++;
+            queue.add(queueItem);
+        }
+
+        return 0;
+    }
+
+
+
+    static class QueueItem {
+        Node node;
+        int depth;
+
+        public QueueItem(Node node, int depth) {
+            this.node = node;
+            this.depth = depth;
+        }
     }
 
     static class Node {
