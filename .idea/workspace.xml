@@ -1,9 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="migrarcep:war exploded" />
+    </artifacts-to-build>
+  </component>
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/../cockpit/cockpit-impl/src/main/java/br/com/preventsenior/credenciamento/service/bean/PrestadorBean.java" line="562" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="4975ae4d-3cfe-4a33-b95c-1f771921cece" name="Default Changelist" comment="" />
+    <list default="true" id="4975ae4d-3cfe-4a33-b95c-1f771921cece" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../corporativo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../corporativo/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/../trader/target/" />
+    <ignored path="$PROJECT_DIR$/../cep-correios-import/target/" />
+    <ignored path="$PROJECT_DIR$/../portalweb/portalweb-impl/target/" />
+    <ignored path="$PROJECT_DIR$/../portalweb/portalweb-api/target/" />
+    <ignored path="$PROJECT_DIR$/../portalweb/target/" />
+    <ignored path="$PROJECT_DIR$/../portalweb/portalweb-core/target/" />
+    <ignored path="$PROJECT_DIR$/../corporativo/corporativo-impl/target/" />
+    <ignored path="$PROJECT_DIR$/../corporativo/corporativo-api/target/" />
+    <ignored path="$PROJECT_DIR$/../corporativo/target/" />
+    <ignored path="$PROJECT_DIR$/../cockpit/target/" />
+    <ignored path="$PROJECT_DIR$/../cockpit/cockpit-impl/target/" />
+    <ignored path="$PROJECT_DIR$/../cockpit/cockpit-api/target/" />
+    <ignored path="$PROJECT_DIR$/../cockpit-ws/cockpit-ws-impl/target/" />
+    <ignored path="$PROJECT_DIR$/../cockpit-ws/cockpit-ws-api/target/" />
+    <ignored path="$PROJECT_DIR$/../cockpit-ws/target/" />
+    <ignored path="$PROJECT_DIR$/../credenciamento/target/" />
+    <ignored path="$PROJECT_DIR$/../credenciamento/credenciamento-api/target/" />
+    <ignored path="$PROJECT_DIR$/../credenciamento/credenciamento-impl/target/" />
+    <ignored path="$PROJECT_DIR$/../cred-contrato/target/" />
+    <ignored path="$PROJECT_DIR$/../cred-contrato/cred-contrato-impl/target/" />
+    <ignored path="$PROJECT_DIR$/../cred-contrato/cred-contrato-api/target/" />
+    <ignored path="$PROJECT_DIR$/../preventseniorcore/preventseniorcore-api/target/" />
+    <ignored path="$PROJECT_DIR$/../preventseniorcore/preventseniorcore-impl/target/" />
+    <ignored path="$PROJECT_DIR$/../preventseniorcore/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -11,30 +47,58 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DefaultGradleProjectSettings">
-    <option name="testRunner" value="GRADLE" />
-    <option name="delegatedBuild" value="true" />
+    <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../cockpit-ws/cockpit-ws-impl/src/main/java/br/com/preventsenior/cockpit/service/rest/PrestadorRestImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="24" />
+            <state>
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/br/com/mhbp/threads/spendthrift/RaceCondition.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../cockpit/cockpit-api/src/main/java/br/com/preventsenior/credenciamento/client/model/MedicoEspecialidade.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="551">
-              <caret line="58" column="62" selection-start-line="58" selection-start-column="62" selection-end-line="58" selection-end-column="62" />
+            <state relative-caret-position="75">
+              <caret line="18" column="36" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../cockpit/cockpit-impl/src/main/java/br/com/preventsenior/credenciamento/dao/PrestadorContratoDetailDAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3945">
+              <caret line="281" column="9" selection-start-line="281" selection-start-column="9" selection-end-line="281" selection-end-column="9" />
               <folding>
-                <element signature="e#217#218#0" expanded="true" />
-                <element signature="e#255#256#0" expanded="true" />
-                <element signature="e#507#508#0" expanded="true" />
-                <element signature="e#545#546#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../credenciamento/credenciamento-impl/src/main/java/br/com/preventsenior/credenciamento/service/bean/PrestadorBean.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1185">
+              <caret line="95" selection-start-line="95" selection-end-line="95" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../cockpit/cockpit-impl/src/main/java/br/com/preventsenior/credenciamento/service/bean/PrestadorBean.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="9180">
+              <caret line="637" column="61" selection-start-line="637" selection-start-column="61" selection-end-line="637" selection-end-column="61" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -49,68 +113,155 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>salvarLaudo: ERRO RESULTADO_EXAME</find>
+      <find>salvarLaudo</find>
+      <find>idLoginLog</find>
+      <find>buscarIdLoginLogPorCPF</find>
+      <find>prestadorContrato</find>
+      <find>contrato</find>
+      <find>inserirPrestadorContratoDetail</find>
+      <find>buscarProdutoDadoPorRegistroAns</find>
+      <find>buscarMedicoEspecialidadePorIdMedicoNomeEspecialidade_V2</find>
+      <find>update</find>
+      <find>executeUpdate()</find>
+      <find>filtraProdutoDadoPorRegistroAns</find>
+      <find>atualizarPrestadorContrato_V2</find>
+      <find>PreventSeniorException</find>
+      <find>atualizarPrestadorContratoDetail</find>
+      <find>BIg</find>
+      <find>buscarContratoDetailPorContratoProduto</find>
+      <find>(BigDecimal)</find>
+      <find>Big</find>
+      <find>public Lon</find>
+      <find>buscarPorContratoProduto</find>
+      <find>valor</find>
+      <find>buscarI</find>
+      <find>atualizarPrestadorContrato</find>
+      <find>buscarPrestadorContratoDetailPorContrato</find>
+      <find>buscarPrestadorContratoDetailsAtivosPor</find>
+      <find>@WebserviceC</find>
+      <find>buscarTussPorCodigo</find>
+      <find>buscarContratoDetailPorContratoProduto_V2</find>
+      <find>integracao</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/br/com/mhbp/threads/spendthrift/racecondition/Account.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/mhbp/threads/spendthrift/racecondition/RaceCondition.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/mhbp/threads/spendthrift/RaceCondition.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/mhbp/reference/TestCaseOutput.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/mhbp/reference/PileFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/mhbp/reference/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/mhbp/reference/ProfitOptimizer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/mhbp/reference/Flut.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/mhbp/reference2/InputFormat.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/mhbp/reference2/DegiroTrading.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/mhbp/test/OutputHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/mhbp/test/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/mhbp/test/TestCaseOutput.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/mhbp/test/Pile.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/mhbp/test/PileFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/mhbp/test/Flut.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/mhbp/test/OptimizationResult.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/mhbp/test/CalculatedOptimalsTrades.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/mhbp/test/ProfitOptimizer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/mhbp/test/TimboektoeTrader.java" />
+        <option value="$PROJECT_DIR$/../trader/src/main/java/br/com/mhbp/trader/Flut.java" />
+        <option value="$PROJECT_DIR$/../trader/src/main/java/br/com/mhbp/trader/FlutOrderNumberAndProfit.java" />
+        <option value="$PROJECT_DIR$/../trader/src/main/java/br/com/mhbp/trader/CalculatedOptimalsTrades.java" />
+        <option value="$PROJECT_DIR$/../trader/src/main/java/br/com/mhbp/trader/TimboektoeTrader.java" />
+        <option value="$PROJECT_DIR$/../trader/src/main/java/br/com/mhbp/trader/ProfitOptimizer.java" />
+        <option value="$PROJECT_DIR$/../trader/src/main/java/br/com/mhbp/trader/Pile.java" />
+        <option value="$PROJECT_DIR$/../trader/src/main/java/br/com/mhbp/trader/PileOfFluts.java" />
+        <option value="$PROJECT_DIR$/../trader/src/main/java/br/com/mhbp/trader/OptimizationTask.java" />
+        <option value="$PROJECT_DIR$/../trader/src/main/java/br/com/mhbp/trader/TraderOPtimizer.java" />
+        <option value="$PROJECT_DIR$/../trader/src/main/java/br/com/mhbp/trader/ProfitSolver.java" />
+        <option value="$PROJECT_DIR$/../trader/src/main/java/br/com/mhbp/trader/TraderOPtimizerSolver.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/mhbp/graphs/cycledetection/Vertex.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/mhbp/graphs/cycledetection/Main.java" />
+        <option value="$PROJECT_DIR$/../cep-correios-import/src/main/java/br/com/preventsenior/correios/cep/business/LocalidadeBusiness.java" />
+        <option value="$PROJECT_DIR$/../cep-correios-import/src/main/resources/sp/localidade/LOG_LOCALIDADE_SP.TXT" />
+        <option value="$PROJECT_DIR$/../cep-correios-import/src/main/java/br/com/preventsenior/correios/cep/rest/RestController.java" />
+        <option value="$PROJECT_DIR$/../cep-correios-import/src/main/resources/localidade/LOG_LOCALIDADE.TXT" />
+        <option value="$PROJECT_DIR$/../cep-correios-import/src/main/resources/localidade_v2/LOG_LOCALIDADE_SP.TXT" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/mhbp/security/ReadFileTest.java" />
+        <option value="$PROJECT_DIR$/../cockpit/cockpit-api/src/main/java/br/com/preventsenior/credenciamento/client/model/IntegracaoContrato.java" />
+        <option value="$PROJECT_DIR$/../cockpit-ws/cockpit-ws-api/src/main/java/br/com/preventsenior/cockpit/client/model/vo/IntegracaoContratoDTO.java" />
+        <option value="$PROJECT_DIR$/../cockpit-ws/cockpit-ws-impl/src/main/java/br/com/preventsenior/cockpit/service/bean/IntegracaoContratoBean.java" />
+        <option value="$PROJECT_DIR$/../cockpit/cockpit-impl/src/main/java/br/com/preventsenior/beneficiario/dao/BeneficiarioContratoDAO.java" />
+        <option value="$PROJECT_DIR$/../cockpit/cockpit-api/src/main/java/br/com/preventsenior/credenciamento/client/model/PrestadorDetailVO.java" />
+        <option value="$PROJECT_DIR$/../cockpit/cockpit-impl/src/main/java/br/com/preventsenior/credenciamento/dao/PrestadorDetailDAO.java" />
+        <option value="$PROJECT_DIR$/../cockpit/cockpit-impl/src/main/java/br/com/preventsenior/beneficiario/service/bean/BeneficiarioBean.java" />
+        <option value="$PROJECT_DIR$/../preventseniorcore/preventseniorcore-impl/src/main/java/br/com/preventsenior/core/dao/LoginCockpitDAO.java" />
+        <option value="$PROJECT_DIR$/../cockpit/cockpit-api/src/main/java/br/com/preventsenior/credenciamento/client/model/PrestadorContratoDetail.java" />
+        <option value="$PROJECT_DIR$/../cockpit/cockpit-impl/src/main/java/br/com/preventsenior/credenciamento/dao/PrestadorContratoDAO.java" />
+        <option value="$PROJECT_DIR$/../cockpit/cockpit-impl/src/main/java/br/com/preventsenior/credenciamento/service/bean/PrestadorBean.java" />
+        <option value="$PROJECT_DIR$/../cockpit/cockpit-api/src/main/java/br/com/preventsenior/credenciamento/client/service/interfaces/PrestadorRemote.java" />
+        <option value="$PROJECT_DIR$/../preventseniorcore/preventseniorcore-impl/src/main/java/br/com/preventsenior/core/dao/TussAnsDAO.java" />
+        <option value="$PROJECT_DIR$/../cockpit/cockpit-impl/src/main/java/br/com/preventsenior/credenciamento/dao/PrestadorContratoDetailDAO.java" />
+        <option value="$PROJECT_DIR$/../cockpit-ws/cockpit-ws-impl/src/main/java/br/com/preventsenior/cockpit/service/rest/PrestadorRestImpl.java" />
       </list>
     </option>
   </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="userSettingsFile" value="$USER_HOME$/Downloads/apache-maven-3.6.1/conf/settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
+  </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="2477" />
-    <option name="width" value="512" />
-    <option name="height" value="384" />
+    <option name="x" value="-5" />
+    <option name="y" value="26" />
+    <option name="width" value="1930" />
+    <option name="height" value="1028" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="javathreads" type="b2602c69:ProjectViewProjectNode" />
-              <item name="javathreads" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="javathreads" type="b2602c69:ProjectViewProjectNode" />
-              <item name="javathreads" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="javathreads" type="b2602c69:ProjectViewProjectNode" />
-              <item name="javathreads" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="javathreads" type="b2602c69:ProjectViewProjectNode" />
-              <item name="javathreads" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="javathreads" type="b2602c69:ProjectViewProjectNode" />
-              <item name="javathreads" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="spendthrift" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../preventseniorcore/pom.xml" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="br.com.mhbp.test" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/security" />
+      <recent name="$PROJECT_DIR$/../cep-correios-import/src/main/resources/localidade_v2" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -124,6 +275,252 @@
       </list>
     </option>
   </component>
+  <component name="RunManager" selected="Remote.cockpit-dev-debug">
+    <configuration name="DegiroTrading" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="br.com.mhbp.reference2.DegiroTrading" />
+      <module name="javathreads" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.mhbp.reference2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="br.com.mhbp.reference.Main" />
+      <module name="javathreads" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.mhbp.reference.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="br.com.mhbp.graphs.cycledetection.Main" />
+      <module name="javathreads" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.mhbp.graphs.cycledetection.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <extension name="net.ashald.envfile">
+        <option name="IS_ENABLED" value="false" />
+        <option name="IS_SUBST" value="false" />
+        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
+        <option name="IS_IGNORE_MISSING_FILES" value="false" />
+        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
+        <ENTRIES>
+          <ENTRY IS_ENABLED="true" PARSER="runconfig" />
+        </ENTRIES>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReadFileTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="br.com.mhbp.security.ReadFileTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.mhbp.security.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <extension name="net.ashald.envfile">
+        <option name="IS_ENABLED" value="false" />
+        <option name="IS_SUBST" value="false" />
+        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
+        <option name="IS_IGNORE_MISSING_FILES" value="false" />
+        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
+        <ENTRIES>
+          <ENTRY IS_ENABLED="true" PARSER="runconfig" />
+        </ENTRIES>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TimboektoeTrader" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="br.com.mhbp.test.TimboektoeTrader" />
+      <module name="javathreads" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.mhbp.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TimboektoeTrader" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="br.com.mhbp.trader.TimboektoeTrader" />
+      <module name="trader" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.mhbp.trader.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="wildlfy10" type="JBossConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="JBoss 10.1.0.Final" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="1.8.0_222 (3)">
+      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
+      <deployment>
+        <artifact name="migrarcep:war exploded">
+          <settings />
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="SERVER" />
+        <option name="BINDING_SET_NAME" value="" />
+        <option name="DOMAIN" value="false" />
+        <option name="SERVER_GROUP" value="main-server-group" />
+        <option name="USERNAME" value="" />
+        <option name="CREDENTIAL_ALIAS" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="JBoss" />
+      <extension name="net.ashald.envfile">
+        <option name="IS_ENABLED" value="false" />
+        <option name="IS_SUBST" value="false" />
+        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
+        <option name="IS_IGNORE_MISSING_FILES" value="false" />
+        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
+        <ENTRIES>
+          <ENTRY IS_ENABLED="true" PARSER="runconfig" />
+        </ENTRIES>
+      </extension>
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="45235" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Debug with VisualVM">
+        <option name="DEBUG_PORT" value="42931" />
+        <option name="visualVMId" value="3504449718433" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="false" />
+          <option name="SCRIPT" value="$USER_HOME$/Programs/wildfly-10.1.0.Final/bin/standalone.sh" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="-c standalone-full-prevent.xml" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug with VisualVM">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="false" />
+          <option name="SCRIPT" value="$USER_HOME$/Programs/wildfly-10.1.0.Final/bin/standalone.sh" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="-c standalone-full-prevent.xml" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run with VisualVM">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="migrarcep:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <configuration name="cockpit-dev-debug" type="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" />
+      <option name="HOST" value="10.34.4.135" />
+      <option name="PORT" value="8787" />
+      <option name="AUTO_RESTART" value="false" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="8787" />
+        <option name="LOCAL" value="false" />
+      </RunnerSettings>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Application.DegiroTrading" />
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.Main (1)" />
+      <item itemvalue="Application.TimboektoeTrader" />
+      <item itemvalue="Application.ReadFileTest" />
+      <item itemvalue="JBoss Server.wildlfy10" />
+      <item itemvalue="Remote.cockpit-dev-debug" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.ReadFileTest" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.TimboektoeTrader" />
+        <item itemvalue="Application.Main (1)" />
+        <item itemvalue="Application.DegiroTrading" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -135,60 +532,580 @@
       <option name="presentableId" value="Default" />
       <updated>1565521318910</updated>
       <workItem from="1565521327035" duration="1527000" />
+      <workItem from="1573921488046" duration="15898000" />
+      <workItem from="1574257702737" duration="29574000" />
+      <workItem from="1575151255818" duration="165000" />
+      <workItem from="1575168010745" duration="6285000" />
+      <workItem from="1575178591236" duration="4944000" />
+      <workItem from="1575184411062" duration="4848000" />
+      <workItem from="1575228396436" duration="3666000" />
+      <workItem from="1575232217188" duration="8169000" />
+      <workItem from="1575594841628" duration="30599000" />
+      <workItem from="1575817438743" duration="595000" />
+      <workItem from="1575850671724" duration="2331000" />
+      <workItem from="1575854544751" duration="10348000" />
+      <workItem from="1578045437838" duration="189000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1527000" />
+    <option name="totallyTimeSpent" value="119138000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1917" y="0" width="1030" height="771" extended-state="6" />
+    <frame x="-5" y="26" width="1930" height="1028" extended-state="6" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info id="Designer" />
-      <window_info id="UI Designer" />
-      <window_info id="Learn" weight="0.3299389" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.47148675" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22949947" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="FindBugs-IDEA" />
+      <window_info id="Designer" order="2" />
+      <window_info id="UI Designer" order="3" />
+      <window_info id="Learn" order="4" weight="0.3299389" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info id="Web" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.2588889" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.12555556" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.38777778" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Maven" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Database" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.3123077" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="FindBugs-IDEA" order="12" />
+      <window_info anchor="bottom" id="Run with VisualVM" order="13" />
+      <window_info anchor="bottom" id="Debug with VisualVM" order="14" />
+      <window_info anchor="bottom" id="Messages" order="15" />
+      <window_info anchor="bottom" id="Java Enterprise" order="16" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Maven" order="4" weight="0.15548456" />
+      <window_info anchor="right" id="Palette&#9;" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
     </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22736955" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="UI Designer" order="3" />
+      <window_info id="Learn" order="4" weight="0.3299389" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info id="Web" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.2588889" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.12555556" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.39444444" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.3123077" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="FindBugs-IDEA" order="12" />
+      <window_info anchor="bottom" id="Run with VisualVM" order="13" />
+      <window_info anchor="bottom" id="Debug with VisualVM" order="14" />
+      <window_info anchor="bottom" id="Messages" order="15" />
+      <window_info anchor="bottom" id="Java Enterprise" order="16" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Maven" order="4" weight="0.15548456" />
+      <window_info anchor="right" id="Palette&#9;" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+    </layout-to-restore>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../cockpit-ws/cockpit-ws-impl/src/main/java/br/com/preventsenior/cockpit/service/rest/PrestadorRestImpl.java</url>
+          <line>819</line>
+          <properties />
+          <option name="timeStamp" value="53" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../cockpit-ws/cockpit-ws-impl/src/main/java/br/com/preventsenior/cockpit/service/rest/PrestadorRestImpl.java</url>
+          <line>821</line>
+          <properties />
+          <option name="timeStamp" value="54" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../cockpit-ws/cockpit-ws-impl/src/main/java/br/com/preventsenior/cockpit/service/rest/PrestadorRestImpl.java</url>
+          <line>817</line>
+          <properties />
+          <option name="timeStamp" value="55" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../cockpit-ws/cockpit-ws-impl/src/main/java/br/com/preventsenior/cockpit/service/rest/PrestadorRestImpl.java</url>
+          <line>756</line>
+          <properties />
+          <option name="timeStamp" value="56" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../cockpit-ws/cockpit-ws-impl/src/main/java/br/com/preventsenior/cockpit/service/rest/PrestadorRestImpl.java</url>
+          <line>749</line>
+          <properties />
+          <option name="timeStamp" value="57" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../cockpit-ws/cockpit-ws-impl/src/main/java/br/com/preventsenior/cockpit/service/rest/PrestadorRestImpl.java</url>
+          <line>751</line>
+          <properties />
+          <option name="timeStamp" value="58" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../cockpit-ws/cockpit-ws-impl/src/main/java/br/com/preventsenior/cockpit/service/rest/PrestadorRestImpl.java</url>
+          <line>632</line>
+          <properties />
+          <option name="timeStamp" value="59" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../cockpit-ws/cockpit-ws-impl/src/main/java/br/com/preventsenior/cockpit/service/rest/PrestadorRestImpl.java</url>
+          <line>638</line>
+          <properties />
+          <option name="timeStamp" value="60" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>print(matrix);</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="jar://$MAVEN_REPOSITORY$/br/com/preventsenior/preventseniorcore-api/2.0.12/preventseniorcore-api-2.0.12.jar!/br/com/preventsenior/core/client/service/interfaces/LoginCockpitRemote.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="24" />
+        <state relative-caret-position="120">
+          <caret line="15" column="136" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="136" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/mhbp/threads/spendthrift/RaceCondition.java">
+    <entry file="file://$PROJECT_DIR$/../cockpit-ws/cockpit-ws-impl/src/main/java/br/com/preventsenior/cockpit/scheduler/ResultadoExameScheduler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="551">
-          <caret line="58" column="62" selection-start-line="58" selection-start-column="62" selection-end-line="58" selection-end-column="62" />
+        <state relative-caret-position="105">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../cockpit-ws/cockpit-ws-api/src/main/java/br/com/preventsenior/cockpit/client/enums/TipoEventoContratoEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../cred-contrato/cred-contrato-impl/src/main/java/br/com/preventsenior/contrato/dao/ContratoDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="54" column="20" selection-start-line="54" selection-start-column="20" selection-end-line="54" selection-end-column="20" />
           <folding>
-            <element signature="e#217#218#0" expanded="true" />
-            <element signature="e#255#256#0" expanded="true" />
-            <element signature="e#507#508#0" expanded="true" />
-            <element signature="e#545#546#0" expanded="true" />
+            <element signature="e#0#100#1" expanded="true" />
+            <element signature="e#0#111#1" expanded="true" />
+            <element signature="e#0#119#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../cred-contrato/cred-contrato-impl/src/main/java/br/com/preventsenior/contrato/service/bean/ContratoBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="31" column="48" selection-start-line="31" selection-start-column="48" selection-end-line="31" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../credenciamento/credenciamento-impl/src/main/java/br/com/preventsenior/credenciamento/business/IntegracaoCockpitBusiness.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../cred-contrato/cred-contrato-impl/src/main/java/br/com/preventsenior/contrato/business/ContratoBusiness.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="2501" column="54" selection-start-line="2501" selection-start-column="31" selection-end-line="2501" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../cockpit-ws/cockpit-ws-api/src/main/java/br/com/preventsenior/cockpit/client/model/vo/IntegracaoContratoDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1770">
+          <caret line="12" column="40" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/br/com/preventsenior/cockpit-api/1.0.53/cockpit-api-1.0.53.jar!/br/com/preventsenior/credenciamento/client/service/interfaces/PrestadorRemote.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="50" column="20" selection-start-line="50" selection-start-column="20" selection-end-line="50" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../cockpit/cockpit-api/src/main/java/br/com/preventsenior/credenciamento/client/model/IntegracaoContrato.java" />
+    <entry file="file://$PROJECT_DIR$/../cockpit/cockpit-api/src/main/java/br/com/preventsenior/credenciamento/client/model/PrestadorDetailVO.java" />
+    <entry file="file://$PROJECT_DIR$/../cockpit/cockpit-impl/src/main/java/br/com/preventsenior/beneficiario/dao/BeneficiarioContratoDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="697">
+          <caret line="286" lean-forward="true" selection-start-line="286" selection-end-line="286" />
+          <folding>
+            <element signature="e#0#96#1" expanded="true" />
+            <element signature="e#0#85#1" expanded="true" />
+            <element signature="e#0#23#0" expanded="true" />
+            <element signature="e#0#88#1" expanded="true" />
+            <element signature="e#0#23#0" expanded="true" />
+            <element signature="e#0#88#1" expanded="true" />
+            <element signature="e#0#23#0" expanded="true" />
+            <element signature="e#0#71#1" expanded="true" />
+            <element signature="e#0#85#1" expanded="true" />
+            <element signature="e#0#77#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../cockpit-ws/cockpit-ws-impl/src/main/java/br/com/preventsenior/cockpit/service/bean/IntegracaoContratoBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="712">
+          <caret line="253" selection-start-line="253" selection-end-line="253" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../cockpit/cockpit-impl/src/main/java/br/com/preventsenior/beneficiario/service/bean/BeneficiarioBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="289" column="89" lean-forward="true" selection-start-line="289" selection-start-column="89" selection-end-line="289" selection-end-column="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/br/com/preventsenior/preventseniorcore-api/2.0.12/preventseniorcore-api-2.0.12.jar!/br/com/preventsenior/core/client/service/interfaces/TussAnsRemote.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/br/com/preventsenior/cockpit-api/1.0.53/cockpit-api-1.0.53.jar!/br/com/preventsenior/credenciamento/client/service/interfaces/MedicoRemote.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../cockpit/cockpit-impl/src/main/java/br/com/preventsenior/credenciamento/dao/PrestadorDetailDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="467">
+          <caret line="162" column="48" selection-start-line="162" selection-start-column="48" selection-end-line="162" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/br/com/preventsenior/preventseniorcore-api/2.0.12/preventseniorcore-api-2.0.12.jar!/br/com/preventsenior/core/client/model/cockpit/TussAns.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2685">
+          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/br/com/preventsenior/cred-contrato-api/1.1.10-SNAPSHOT/cred-contrato-api-1.1.10-20190822.181445-5.jar!/br/com/preventsenior/contrato/interfaces/ejb/ContratoRemote.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="21" column="24" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../credenciamento/credenciamento-impl/src/main/java/br/com/preventsenior/credenciamento/cadastros/controller/PrestadorController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1087">
+          <caret line="280" column="77" selection-start-line="280" selection-start-column="77" selection-end-line="280" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../cockpit-ws/cockpit-ws-impl/src/main/java/br/com/preventsenior/cockpit/business/ResultadoExameBusiness.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="397" column="28" selection-start-line="397" selection-start-column="17" selection-end-line="397" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../preventseniorcore/preventseniorcore-impl/src/main/java/br/com/preventsenior/core/dao/LoginCockpitDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="155" column="17" selection-start-line="155" selection-start-column="17" selection-end-line="155" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#97#1" expanded="true" />
+            <element signature="e#0#82#1" expanded="true" />
+            <element signature="e#0#82#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/br/com/preventsenior/preventseniorcore-api/2.0.13/preventseniorcore-api-2.0.13.jar!/br/com/preventsenior/core/client/model/cockpit/TussAns.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3450">
+          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../credenciamento/credenciamento-impl/src/main/java/br/com/preventsenior/credenciamento/business/CredenciamentoBussiness.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="482" column="72" selection-start-line="482" selection-start-column="72" selection-end-line="482" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../cockpit/cockpit-api/src/main/java/br/com/preventsenior/credenciamento/client/model/MedicoDado.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1035">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../cockpit/cockpit-impl/src/main/java/br/com/preventsenior/credenciamento/service/bean/MedicoBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="482">
+          <caret line="394" column="60" lean-forward="true" selection-start-line="394" selection-start-column="60" selection-end-line="394" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../cockpit/cockpit-impl/src/main/java/br/com/preventsenior/credenciamento/dao/MedicoEspecialidadeDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="58" column="76" selection-start-line="58" selection-start-column="76" selection-end-line="58" selection-end-column="76" />
+          <folding>
+            <element signature="e#0#65#1" expanded="true" />
+            <element signature="e#0#154#1" expanded="true" />
+            <element signature="e#0#102#1" expanded="true" />
+            <element signature="e#0#179#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/br/com/preventsenior/preventseniorcore-api/2.0.13/preventseniorcore-api-2.0.13.jar!/br/com/preventsenior/core/client/dao/DAO.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="39" column="13" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#17#0" expanded="true" />
+            <element signature="e#0#52#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../credenciamento/credenciamento-impl/src/main/java/br/com/preventsenior/credenciamento/dao/ProfissionalConselhoDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="28" column="18" lean-forward="true" selection-start-line="28" selection-start-column="18" selection-end-line="28" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#71#1" expanded="true" />
+            <element signature="e#0#104#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../portalweb/portalweb-impl/src/main/java/br/com/preventsenior/portalweb/dao/EventoTempoDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="29" column="14" selection-start-line="29" selection-start-column="14" selection-end-line="29" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#75#1" expanded="true" />
+            <element signature="e#0#49#0" expanded="true" />
+            <element signature="e#0#69#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../cockpit/cockpit-impl/src/main/java/br/com/preventsenior/credenciamento/dao/ProdutoDadoDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="35" column="53" selection-start-line="35" selection-start-column="53" selection-end-line="35" selection-end-column="53" />
+          <folding>
+            <element signature="e#0#57#1" expanded="true" />
+            <element signature="e#0#58#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../preventseniorcore/preventseniorcore-impl/src/main/java/br/com/preventsenior/core/service/bean/LoginCockpitBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="80" column="13" lean-forward="true" selection-start-line="80" selection-start-column="13" selection-end-line="80" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../portalweb/portalweb-impl/src/main/java/br/com/preventsenior/portalweb/dao/AtividadeUsuarioDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="311" column="85" lean-forward="true" selection-start-line="311" selection-start-column="12" selection-end-line="311" selection-end-column="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../cockpit/cockpit-api/src/main/java/br/com/preventsenior/credenciamento/client/model/ProdutoDado.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../cockpit/cockpit-api/src/main/java/br/com/preventsenior/credenciamento/client/model/PrestadorContrato.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="29" column="21" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../cockpit/cockpit-api/src/main/java/br/com/preventsenior/credenciamento/client/model/PrestadorDetail.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="38" column="21" selection-start-line="38" selection-start-column="21" selection-end-line="38" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../cockpit/cockpit-api/src/main/java/br/com/preventsenior/credenciamento/client/model/PrestadorDado.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../cockpit/cockpit-impl/src/main/java/br/com/preventsenior/credenciamento/dao/PrestadorContratoDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="593">
+          <caret line="390" column="45" selection-start-line="390" selection-start-column="45" selection-end-line="390" selection-end-column="45" />
+          <folding>
+            <element signature="e#0#205#1" expanded="true" />
+            <element signature="e#0#211#1" expanded="true" />
+            <element signature="e#0#248#1" expanded="true" />
+            <element signature="e#0#303#1" expanded="true" />
+            <element signature="e#0#309#1" expanded="true" />
+            <element signature="e#0#269#1" expanded="true" />
+            <element signature="e#0#294#1" expanded="true" />
+            <element signature="e#0#120#1" expanded="true" />
+            <element signature="e#0#161#1" expanded="true" />
+            <element signature="e#0#170#1" expanded="true" />
+            <element signature="e#0#127#1" expanded="true" />
+            <element signature="e#0#118#1" expanded="true" />
+            <element signature="e#0#319#1" expanded="true" />
+            <element signature="e#0#300#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../cockpit/cockpit-api/src/main/java/br/com/preventsenior/credenciamento/client/enums/StatusPrestadorEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="21" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../cockpit/cockpit-api/src/main/java/br/com/preventsenior/credenciamento/client/model/PrestadorContratoDetail.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="24" column="24" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../cockpit/cockpit-api/src/main/java/br/com/preventsenior/credenciamento/client/service/interfaces/PrestadorRemote.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="745">
+          <caret line="97" column="111" selection-start-line="97" selection-start-column="111" selection-end-line="97" selection-end-column="111" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../cockpit/cockpit-impl/src/main/resources/META-INF/persistence.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="760">
+          <caret line="132" lean-forward="true" selection-start-line="132" selection-end-line="132" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../cockpit-ws/cockpit-ws-api/src/main/java/com/matrixsaude/protocolomatrix/WsrvProtocoloMatrixPrevent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../preventseniorcore/preventseniorcore-api/src/main/java/br/com/preventsenior/core/client/service/interfaces/TussAnsRemote.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="11" column="17" lean-forward="true" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../preventseniorcore/preventseniorcore-impl/src/main/java/br/com/preventsenior/core/service/bean/TussAnsBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="278" column="43" selection-start-line="278" selection-start-column="43" selection-end-line="278" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../preventseniorcore/preventseniorcore-impl/src/main/java/br/com/preventsenior/core/dao/TussAnsDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="32" column="90" selection-start-line="32" selection-start-column="90" selection-end-line="32" selection-end-column="90" />
+          <folding>
+            <element signature="e#0#55#1" expanded="true" />
+            <element signature="e#0#97#1" expanded="true" />
+            <element signature="e#0#94#1" expanded="true" />
+            <element signature="e#0#90#1" expanded="true" />
+            <element signature="e#0#105#1" expanded="true" />
+            <element signature="e#0#57#1" expanded="true" />
+            <element signature="e#0#55#1" expanded="true" />
+            <element signature="e#0#57#1" expanded="true" />
+            <element signature="e#0#72#1" expanded="true" />
+            <element signature="e#0#237#0" expanded="true" />
+            <element signature="e#0#112#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../cockpit-ws/cockpit-ws-impl/src/main/java/br/com/preventsenior/cockpit/service/rest/PrestadorRestImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../cockpit/cockpit-api/src/main/java/br/com/preventsenior/credenciamento/client/model/MedicoEspecialidade.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="18" column="36" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../cockpit/cockpit-impl/src/main/java/br/com/preventsenior/credenciamento/dao/PrestadorContratoDetailDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3945">
+          <caret line="281" column="9" selection-start-line="281" selection-start-column="9" selection-end-line="281" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../credenciamento/credenciamento-impl/src/main/java/br/com/preventsenior/credenciamento/service/bean/PrestadorBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1185">
+          <caret line="95" selection-start-line="95" selection-end-line="95" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../cockpit/cockpit-impl/src/main/java/br/com/preventsenior/credenciamento/service/bean/PrestadorBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9180">
+          <caret line="637" column="61" selection-start-line="637" selection-start-column="61" selection-end-line="637" selection-end-column="61" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -196,9 +1113,78 @@
   </component>
   <component name="masterDetails">
     <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>cockpit</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="ProjectJDKs.UI">
         <settings>
           <last-edited>11</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
           <splitter-proportions>
             <option name="proportions">
               <list>

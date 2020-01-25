@@ -51,7 +51,7 @@ public class DepthFirstSearchWithStack {
         boolean visited;
 
         public Vertex(int value) {
-            this.neighbours = new ArrayList<>();
+            this.neighbours = new ArrayList();
             this.value = value;
         }
     }
