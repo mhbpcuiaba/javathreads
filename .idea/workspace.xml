@@ -11,8 +11,8 @@
   <component name="ChangeListManager">
     <list default="true" id="4975ae4d-3cfe-4a33-b95c-1f771921cece" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../corporativo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../corporativo/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-threads.iml" beforeDir="false" afterPath="$PROJECT_DIR$/java-threads.iml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -50,61 +50,7 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../cockpit-ws/cockpit-ws-impl/src/main/java/br/com/preventsenior/cockpit/service/rest/PrestadorRestImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../cockpit/cockpit-api/src/main/java/br/com/preventsenior/credenciamento/client/model/MedicoEspecialidade.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="18" column="36" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../cockpit/cockpit-impl/src/main/java/br/com/preventsenior/credenciamento/dao/PrestadorContratoDetailDAO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3945">
-              <caret line="281" column="9" selection-start-line="281" selection-start-column="9" selection-end-line="281" selection-end-column="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../credenciamento/credenciamento-impl/src/main/java/br/com/preventsenior/credenciamento/service/bean/PrestadorBean.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1185">
-              <caret line="95" selection-start-line="95" selection-end-line="95" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../cockpit/cockpit-impl/src/main/java/br/com/preventsenior/credenciamento/service/bean/PrestadorBean.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="9180">
-              <caret line="637" column="61" selection-start-line="637" selection-start-column="61" selection-end-line="637" selection-end-column="61" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -225,9 +171,9 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="x" value="-5" />
-    <option name="y" value="26" />
+    <option name="y" value="31" />
     <option name="width" value="1930" />
     <option name="height" value="1028" />
   </component>
@@ -239,9 +185,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="ProjectPane" />
       <pane id="Scope" />
       <pane id="PackagesPane" />
-      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -545,16 +491,17 @@
       <workItem from="1575850671724" duration="2331000" />
       <workItem from="1575854544751" duration="10348000" />
       <workItem from="1578045437838" duration="189000" />
+      <workItem from="1583732355151" duration="24000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="119138000" />
+    <option name="totallyTimeSpent" value="119162000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-5" y="26" width="1930" height="1028" extended-state="6" />
+    <frame x="-5" y="31" width="1930" height="1028" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22949947" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23162939" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />

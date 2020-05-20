@@ -1,0 +1,6 @@
+
+
+
+CompletableFuture is used for perform possible asynchronous (non-blocking) computation and trigger
+dependant computations which could also be asynchronous.
+

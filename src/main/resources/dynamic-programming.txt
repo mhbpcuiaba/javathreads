@@ -1,0 +1,15 @@
+* Dynamic programming is a method for solving a complex problem by breaking it down into a collection of simpler subproblems.
+* It is applicable to problems exhibiting the properties of overlapping subproblems.
+* The method takes far less time than other methods that don't take advantage of the subproblem overlap.
+* We need to solve different parts of the problem(subproblems) + combine the solutions of the subproblems to reach an overall solution.
+* We solve each subproblems only once -> we reduce the number of computations.
+* Subproblems can be stored (memoization)
+
+
+Dynamic programming VS divide and conquer
+
+    * Several problems can be solved by combining optimal solutions to non-overlapping sub-problems
+    * This strategy is called "divide and conquer"
+    * This is why merge sort/quick sort are not classified as dynamic programming problems.
+    * Overlapping subproblems -> dynamic programming
+    * Non-overlapping subproblems -> divide and conquer

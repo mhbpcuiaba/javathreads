@@ -1,0 +1,88 @@
+
+Phaser
+ * Mix of CyclicBarrier and CountDownLatch
+    - Number of parties registered may vary over time
+      like count in CountDownLatch and parties in CyclicBarrier
+    - More modern approach to InterruptedException
+
+ * Compatible with Fork/Join framework
+    -Use ManagedBlocker
+
+
+
+Phaser API
+
+    register
+    awaitAdvance
+    arrive
+    arriveAndAwaitAdvance
+    arriveDeregister
+
+
+
+
+
+    * Several tasks should start their work together or as close as possible
+    * Different approaches to coordinate start of tasks
+        i. wait/notify and Lock/Condition/await/signal
+        ii. Volatile and Acquire/Release spin
+        iii. CountDownLatch and CyclicBarrier
+        iv. Phaser
+
+
+* Phaser keeps score of phase we are in
+    -CyclicBarrier does not
+* We can use this to cancel the Phaser
+
+
+    private void addButtons(int buttons, int blinks) {
+
+        Phaser phaser new Phaser(buttons) {
+
+            protected boolean onAdvance(int phase, int registeredParties {
+                return phase >= blinks -1 || registeredParties == 0;
+            }
+        }
+    }
+
+
+
+
+*   Phasers may also be used by tasks executing in a
+    ForkJoinPool which will ensure sufficient parallelism to execute tasks
+    when others are blocked waiting for a phase to advance.
+
+* ForkJoinPools do not typically have an upper limit on threads
+    - The pools will try have active threads equals to desired parallelism level
+    - Additional threads might be created temporarily.
+
+
+* CountDownLatch
+    - Threads wait for latch to count down to zero
+
+* CyclicBarrier
+    - Threads rendezvous at a barrier
+* Phaser
+    - Flexible synchronizer for task coordination
+
+
+
+
+
+
+- Synchronized Collections
+- Concurrent Collection
+- Blocking Queues
+- Synchronizers, such as CowntDownLatch, Semaphore and Phaser
+
+
+
+- Thread-safe collections
+
+
+    List<String> safeList = Collections.synchronizedList(new ArrayList());
+    Map<Integer, String> safeMap = Collections.syncrhronizedMap(new HashMap<>());
+
+    * Also some older classes such as Vector, ConcurrentHashMap and HashTable
+
+

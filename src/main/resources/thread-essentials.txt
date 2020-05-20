@@ -1,0 +1,3 @@
+
+Concurrency => more than one thing at same time
+using multiple hardware(cpu) to solve a single task faster
