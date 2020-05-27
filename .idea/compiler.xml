@@ -6,8 +6,27 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="javathreads" />
+        <module name="credenciamento-impl" />
+        <module name="corporativo-api" />
+        <module name="corporativo-impl" />
+        <module name="credenciamento-api" />
+        <module name="cockpit-ws-impl" />
+        <module name="portalweb-impl" />
+        <module name="cred-contrato-impl" />
+        <module name="preventseniorcore-impl" />
+        <module name="preventseniorcore-api" />
+        <module name="cred-contrato-api" />
+        <module name="cockpit-impl" />
+        <module name="cockpit-ws-api" />
+        <module name="portalweb-api" />
+        <module name="cockpit-api" />
+        <module name="portalweb-core" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel target="8">
+      <module name="javathreads" target="8" />
+      <module name="migrarcep" target="1.8" />
+      <module name="trader" target="8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
