@@ -1,8 +1,8 @@
 package br.com.mhbp.threads.freelock;
-
-import sun.misc.Unsafe;
-
-import java.util.function.IntBinaryOperator;
+//
+//import sun.misc.Unsafe;
+//
+//import java.util.function.IntBinaryOperator;
 
 //http://javabypatel.blogspot.com/2016/01/infinite-loop-in-hashmap.html
 //https://www.baeldung.com/lmax-disruptor-concurrency
@@ -13,49 +13,49 @@ import java.util.function.IntBinaryOperator;
 //https://dzone.com/articles/understanding-sunmiscunsafe
 //http://mishadoff.com/blog/java-magic-part-4-sun-dot-misc-dot-unsafe/
 public class Examples {
-
-    private static final Unsafe unsafe = Unsafe.getUnsafe();
-    private static final long valueOffset;
-    private volatile int value;
-
-    public boolean compareAndSet(int currentValue, int newValue) {
-        return unsafe.compareAndSwapInt(this, valueOffset, currentValue, newValue);
-    }
-
-    public final int getAndIncrement() {
-        return unsafe.getAndAddInt(this, valueOffset, 1);
-    }
-    public final int getValue() {
-        return this.value;
-    }
-
-    public final int getAndAccumulate(int var1, IntBinaryOperator var2) {
-        int var3;
-        int var4;
-        do {
-            var3 = this.getValue();
-            var4 = var2.applyAsInt(var3, var1);
-        } while(!this.compareAndSet(var3, var4));
-
-        return var3;
-    }
-
-    public final int getAndAddInt(Object var1, long var2, int var4) {
-        int var5;
-        do {
-            var5 = unsafe.getIntVolatile(var1, var2);
-        } while(!unsafe.compareAndSwapInt(var1, var2, var5, var5 + var4));
-
-        return var5;
-    }
-
-    static {
-        try {
-            valueOffset = unsafe.objectFieldOffset(Examples.class.getDeclaredField("value"));
-        } catch (Exception var1) {
-            throw new Error(var1);
-        }
-    }
+//
+//    private static final Unsafe unsafe = Unsafe.getUnsafe();
+//    private static final long valueOffset;
+//    private volatile int value;
+//
+//    public boolean compareAndSet(int currentValue, int newValue) {
+//        return unsafe.compareAndSwapInt(this, valueOffset, currentValue, newValue);
+//    }
+//
+//    public final int getAndIncrement() {
+//        return unsafe.getAndAddInt(this, valueOffset, 1);
+//    }
+//    public final int getValue() {
+//        return this.value;
+//    }
+//
+//    public final int getAndAccumulate(int var1, IntBinaryOperator var2) {
+//        int var3;
+//        int var4;
+//        do {
+//            var3 = this.getValue();
+//            var4 = var2.applyAsInt(var3, var1);
+//        } while(!this.compareAndSet(var3, var4));
+//
+//        return var3;
+//    }
+//
+//    public final int getAndAddInt(Object var1, long var2, int var4) {
+//        int var5;
+//        do {
+//            var5 = unsafe.getIntVolatile(var1, var2);
+//        } while(!unsafe.compareAndSwapInt(var1, var2, var5, var5 + var4));
+//
+//        return var5;
+//    }
+//
+//    static {
+//        try {
+//            valueOffset = unsafe.objectFieldOffset(Examples.class.getDeclaredField("value"));
+//        } catch (Exception var1) {
+//            throw new Error(var1);
+//        }
+//    }
 }
 /*
 
