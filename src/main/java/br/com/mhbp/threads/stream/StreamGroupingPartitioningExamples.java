@@ -15,11 +15,17 @@ public class StreamGroupingPartitioningExamples {
         Map<Boolean, List<Person>> us = persons.stream()
                 .collect(Collectors.partitioningBy(p -> p.country.equals("US")));
 
-        Map<Boolean, List<Person>> us1 = persons.stream()
-                .collect(Collectors.groupingBy(p -> p.country.equals("US")));
+        System.out.println(us);
 
-        Map<Boolean, Long> us2 = persons.stream()
-                .collect(Collectors.groupingBy(p -> p.country.equals("US"), Collectors.counting()));
+        Map<String, List<Person>> us1 = persons.stream()
+                .collect(Collectors.groupingBy(p -> p.country));
+
+        System.out.println(us1);
+
+        Map<String, Long> us2 = persons.stream()
+                .collect(Collectors.groupingBy(p -> p.country, Collectors.counting()));
+
+        System.out.println(us2);
 
         Map<Boolean, Long> us3 = persons.stream()
                 .collect(Collectors.partitioningBy(p -> p.country.equals("US"), Collectors.counting()));
@@ -51,6 +57,14 @@ public class StreamGroupingPartitioningExamples {
         public Person(String name, String country) {
             this.name = name;
             this.country = country;
+        }
+
+        @Override
+        public String toString() {
+            return "Person{" +
+                    "name='" + name + '\'' +
+                    ", country='" + country + '\'' +
+                    '}';
         }
     }
 }
