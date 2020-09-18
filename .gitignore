@@ -12,3 +12,4 @@
 *.iml
 .tern-project
 *.*~
+.idea/workspace.xml

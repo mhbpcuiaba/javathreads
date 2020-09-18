@@ -3,6 +3,7 @@ package br.com.mhbp.threads.parallel.forkjointasks.counted.completer;
 import java.math.BigInteger;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.CountedCompleter;
 import java.util.concurrent.ForkJoinPool;
 import java.util.concurrent.atomic.AtomicReference;
@@ -34,7 +35,7 @@ public class CountedCompleterExample {
 
         @Override
         public void compute() {
-
+            ArrayBlockingQueue p;
             if (integerList.size() <= SEQUENTIAL_THRESHOLD) {
                 showFactorial();
             } else {

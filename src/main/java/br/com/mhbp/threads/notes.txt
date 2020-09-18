@@ -1,0 +1,137 @@
+
+
+Good Non-Thread Safe Collections Defaults
+
+    * List
+        - ArrayList (low on memory, fast iteration)
+    * Map
+        - HashMap (low on memory, fast iteration)
+
+     * Set
+        - HashSet
+
+     * Queue
+
+        - ArrayDeque
+
+
+
+Good Defaults For Thread Safe Collections
+
+    * List
+        - Collections.synchronized(Array List)
+        - Lots of iterations - CopyOnWriteList
+
+    * Map
+        - ConcurentHashMap ( low contention, always available map)
+        - If memory is a bottleneck - Collections.synchronizedMap(HashMap)
+        - If contention is the bottleneck - Cliff Click's non-blocking wait-free table
+    * Set
+        - Collections.newSetFromMap(ConcurrentHashMap)
+
+    * Queue
+
+        - LinkedBlockingQueue
+
+
+
+
+A synchronizer is any object that coordinates the control flow of threads based on its state
+
+    For example:
+
+        FutureTask
+        Exchanger
+        BlockingQueue
+        Semaphore
+        Phaser
+        CountDownLatch
+        CyclicBarrier
+        CompletableFuture
+        ReentrantLock
+        ReentrantReadWriteLock
+        StampedLock
+
+
+
+Semaphores
+
+
+    * Semaphores are used to synchronize resource access
+        - For example. limiting number of open database connections
+
+    * Each semaphore contains a number  of permits
+
+        - We acquire() a semaphore permit when we want to use a resource
+            * If noe is available, it will block
+        - We release() the semaphore permit when we are done with it
+
+    # Danger
+        - Semaphore does not know which threads acquired them
+        - Thus you can release() semaphores you never acquired
+        - or you could forget to release due to an exception
+
+
+
+
+CountDownLatch
+
+    * The CountDownLatch only allows threads to pass once countDown() has been called a number of times
+        - Our server might need to start some threads pools, database pools, and other services before generally available
+        - If we know that there are 6 services to start, we can make a CountDownLatch of size 6
+        - Any thread wanting to use our server would need to wait until the latch has been counted down to zero
+
+
+
+
+
+Phasers
+
+    * Allows threads to coordinate by phases
+        - Similar to CountDownLatch, but more flexible
+
+    * Registration
+        - Number of parties registered may vary over time
+            * Same as count in CountDownLatch
+            * A party can register/deregister itself at anytime
+
+     * ManagedBlocker
+        - Can be used in the ForkJoinPool
+
+     * The code for Phaser is simpler and more intuitive
+
+            ex:
+
+                static void runTask(List<Runnable> tasks) throws InterruptedException {
+
+                    Phaser phaser = new Phaser (1);
+
+                    for (Runnable task: tasks) {
+
+                        phaser.register();
+                        new Thread( () -> {
+                            phaser.arriveAndAwaitAdvance();
+                            println("Running: " + task);
+                        }).start();
+
+                        Thread.sleep(1_000);
+                    }
+
+                    phaser.arriveAndDeregister();
+                }
+
+
+
+Synchronizers Summary
+
+* Semaphores: used to limit resources
+* CountDownLatch: Makes thread wait until the latch has been counted down to zero
+* Phaser: Got less code and better interrupt management
+
+* Others (not covered) : FutureTask, Exchanger, CyclicBarrier
+0
+
+#######################################################################################################################
+Must read => Concurent Animation by Victor Grazi
+
+#######################################################################################################################
