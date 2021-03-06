@@ -1,0 +1,73 @@
+
+
+
+
+
+
+    #CompletableFuture with with encapsulated computation logic
+
+        * Static methods runAsync and supplyAsync allow us to create a CompletableFuture instance
+            out of Runnable and Supplier functional types correspondingly.
+
+        * Both Runnable and Supplier are functional interfaces that allow passing their instances
+        as lambdas expressions.
+
+        * The Runnable interface is the same old interface that is used in threads and it does not allow to return value
+
+        * The Supplier interface is a generic functional interface with a single method that has no arguments returns
+            a value of parameterized type.
+
+        * Supplier allows to provide an instance of the Supplier as a lambda expression that does the calculation and
+            returns the result.
+
+
+    #Processing results of Asynchronous computations
+
+        * The most generic way to process the result of a computation is to feed it to a function. The thenApply
+            method does exactly that:
+
+                Accepts a Function instance, uses it to process the result and returns a Future that holds a value
+                returned by a function.
+
+                CompletableFuture<String> completableFuture = Completable.supplyAsync( () -> "Hello" );
+
+                CompletableFuture<String> future = completableFuture.thenApply( s -> s + " World");
+
+
+
+
+        If you don't need to return a value down the Future chain, you can use an instance of the Consumer
+        functional interface. Its single method takes a parameter and returns void.
+
+
+        There is a method for this use case in the CompletableFuture - the thenAccept method receives a Consumer
+        and passes it the result of the computation. The final future.get() call returns an instance of the Void type.
+
+        CompletableFuture<Void> future = completableFuture.thenAccept(s -> sout("Computation returned"));
+
+
+
+        If you neither need the value of the computation nor want to return some value at the enf of the chain,
+        then you can pass a Runnable lambda to the thenRun method. In the following example, after the future.get()
+        method is called, we simply print a line in the console:
+
+        completableFuture.thenRun( () -> print("finished"));
+
+
+
+        * The best part of the CompletableFuture API is the ability to combine CompletableFuture instances in a chain of
+        computation steps.
+
+        * The result of this chaining is itself a CompletableFuture that allows further chaining and combining.
+        This approach is in functional languages.
+
+
+        * For error-handling in a chain of asynchronous computation steps, throw/catch idiom had to be adapted in a
+        similar fashion .
+
+        * Instead of catching an exception in a syntactic block, the CompletableFuture class allows you to handle it in
+        a special handle method. This method receives two parameters: a result of a computation (if it finished
+        successfully) and the exception thrown (if some computation step did not complete normally).
+
+
+
