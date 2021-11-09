@@ -28,14 +28,3 @@ public class Stream {
     }
 
 }
-/*
-Hello guys,
-my name is Marcos Henrique Barros Pinto,
-I'm from Brazil, my hometown is Cuiaba, I've been living in Sau Paulo more than ten years.
-
-I am Bachelor of  Computer Science at Federal University  of Mato Grosso do Sul, Brazil – 2006.
-I am a software architect at Prevent Senior, it is a health care provider focused on seniors.
-I found concurrency, parallelism, and distributed system my passion on science of computer.
-and I hope this course can help me go even deeper on the subject.
-
- */

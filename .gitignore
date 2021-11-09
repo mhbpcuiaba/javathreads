@@ -13,3 +13,4 @@
 .tern-project
 *.*~
 .idea/workspace.xml
+.idea/compiler.xml
